@@ -1,9 +1,69 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:orientation="vertical"
     android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
     tools:context=".AnekApps.Barcode">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_8sdp"
+        android:layout_marginTop="@dimen/_3sdp"
+        android:layout_marginEnd="@dimen/_8sdp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="@dimen/_8sdp"
+        android:paddingStart="@dimen/_10sdp"
+        android:paddingEnd="@dimen/_10sdp"
+        android:weightSum="2">
+
+        <ImageView
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:src="@drawable/barcode" />
+
+        <TextView
+            android:layout_width="@dimen/_190sdp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.9"
+            android:includeFontPadding="false"
+            android:text="Barcode Scanner"
+            android:fontFamily="@font/regular"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_22ssp" />
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/scannedText"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:includeFontPadding="false"
+        android:hint="scanned text will appear here"
+        android:textColorHint="@color/white"
+        android:fontFamily="@font/regular"
+        android:layout_marginStart="@dimen/_15sdp"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:layout_marginBottom="@dimen/_5sdp"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_16ssp" />
+
+    <ImageView
+        android:id="@+id/scanner"
+        android:layout_width="@dimen/_35sdp"
+        android:layout_height="@dimen/_35sdp"
+        android:layout_marginEnd="@dimen/_15sdp"
+        android:layout_marginBottom="@dimen/_15sdp"
+        android:src="@drawable/scan"
+        android:layout_gravity="end"
+        app:tint="@color/red"
+        android:contentDescription="TODO" />
+
+</LinearLayout>

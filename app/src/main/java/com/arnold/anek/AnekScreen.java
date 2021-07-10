@@ -23,7 +23,6 @@ public class AnekScreen extends AppCompatActivity {
 
     private LinearLayout linkify, counter, passwords, notebook, barcode, gallery,
             browser, colorCode, calculator, converter, diceRoller, recorder;
-    Intent intent;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -39,62 +38,50 @@ public class AnekScreen extends AppCompatActivity {
     private void appClicks() {
 
         linkify.setOnClickListener(v -> {
-            intent = new Intent(AnekScreen.this, LinkifyLinks.class);
-            startActivity(intent);
+            startActivity(new Intent(getApplicationContext(), LinkifyLinks.class));
         });
         counter.setOnClickListener(v -> {
-            intent = new Intent(AnekScreen.this, Counter.class);
-            startActivity(intent);
+            startActivity(new Intent(getApplicationContext(), Counter.class));
 
         });
         passwords.setOnClickListener(v -> {
-            intent = new Intent(AnekScreen.this, Passwords.class);
-            startActivity(intent);
+            startActivity(new Intent(getApplicationContext(), Passwords.class));
 
         });
         notebook.setOnClickListener(v -> {
-            intent = new Intent(AnekScreen.this, Notebook.class);
-            startActivity(intent);
+            startActivity(new Intent(getApplicationContext(), Notebook.class));
 
         });
         barcode.setOnClickListener(v -> {
-            intent = new Intent(AnekScreen.this, Barcode.class);
-            startActivity(intent);
+            startActivity(new Intent(getApplicationContext(), Barcode.class));
 
         });
         gallery.setOnClickListener(v -> {
-            intent = new Intent(AnekScreen.this, PhotoGallery.class);
-            startActivity(intent);
+            startActivity(new Intent(getApplicationContext(), PhotoGallery.class));
 
         });
         browser.setOnClickListener(v -> {
-            intent = new Intent(AnekScreen.this, BrowserSearch.class);
-            startActivity(intent);
+            startActivity(new Intent(getApplicationContext(), BrowserSearch.class));
 
         });
         colorCode.setOnClickListener(v -> {
-            intent = new Intent(AnekScreen.this, ColorCode.class);
-            startActivity(intent);
+            startActivity(new Intent(getApplicationContext(), ColorCode.class));
 
         });
         calculator.setOnClickListener(v -> {
-            intent = new Intent(AnekScreen.this, Calculator.class);
-            startActivity(intent);
+            startActivity(new Intent(getApplicationContext(), Calculator.class));
 
         });
         converter.setOnClickListener(v -> {
-            intent = new Intent(AnekScreen.this, Converter.class);
-            startActivity(intent);
+            startActivity(new Intent(getApplicationContext(), Converter.class));
 
         });
         diceRoller.setOnClickListener(v -> {
-            intent = new Intent(AnekScreen.this, DiceRoller.class);
-            startActivity(intent);
+            startActivity(new Intent(getApplicationContext(), DiceRoller.class));
 
         });
         recorder.setOnClickListener(v -> {
-            intent = new Intent(AnekScreen.this, Recorder.class);
-            startActivity(intent);
+            startActivity(new Intent(getApplicationContext(), Recorder.class));
 
         });
     }
