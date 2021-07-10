@@ -9,7 +9,6 @@
     tools:context=".AnekScreen">
 
     <LinearLayout
-        android:id="@+id/textMyNote"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/_8sdp"
@@ -23,7 +22,6 @@
         android:weightSum="2">
 
         <TextView
-            android:id="@+id/MyNotes"
             android:layout_width="@dimen/_190sdp"
             android:layout_height="wrap_content"
             android:layout_weight="1.9"
@@ -43,10 +41,9 @@
 
 
     <ScrollView
-        android:id="@+id/horizontal"
+        android:id="@+id/scrollView"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:layout_goneMarginTop="@dimen/_5sdp">
+        android:layout_height="wrap_content">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -55,6 +52,7 @@
             android:paddingTop="@dimen/_20sdp">
 
             <LinearLayout
+                android:id="@+id/linkify"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal">
@@ -90,6 +88,7 @@
 
 
                 <LinearLayout
+                    android:id="@+id/counter"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="@dimen/_17sdp"
@@ -120,6 +119,7 @@
 
 
                 <LinearLayout
+                    android:id="@+id/passwords"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="@dimen/_17sdp"
@@ -150,6 +150,7 @@
 
 
                 <LinearLayout
+                    android:id="@+id/notebook"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="@dimen/_17sdp"
@@ -180,6 +181,7 @@
 
 
                 <LinearLayout
+                    android:id="@+id/barcode"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="@dimen/_17sdp"
@@ -210,6 +212,7 @@
 
 
                 <LinearLayout
+                    android:id="@+id/gallery"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="@dimen/_17sdp"
@@ -240,6 +243,7 @@
 
 
                 <LinearLayout
+                    android:id="@+id/browser"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="@dimen/_17sdp"
@@ -271,6 +275,7 @@
 
 
                 <LinearLayout
+                    android:id="@+id/colorCode"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="@dimen/_17sdp"
@@ -301,6 +306,7 @@
 
 
                 <LinearLayout
+                    android:id="@+id/converter"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="@dimen/_17sdp"
@@ -331,6 +337,7 @@
 
 
                 <LinearLayout
+                    android:id="@+id/calculator"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="@dimen/_17sdp"
@@ -361,6 +368,7 @@
 
 
                 <LinearLayout
+                    android:id="@+id/dices"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="@dimen/_17sdp"
@@ -391,8 +399,8 @@
                 android:layout_marginTop="@dimen/_25sdp"
                 android:layout_marginBottom="@dimen/_30sdp">
 
-
                 <LinearLayout
+                    android:id="@+id/recorder"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="@dimen/_17sdp"

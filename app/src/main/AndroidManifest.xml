@@ -11,7 +11,6 @@
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.CAMERA" />
 
-
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -19,7 +18,19 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Anek">
-        <activity android:name=".AnekScreen"></activity>
+        <activity android:name=".AnekApps.Recorder"></activity>
+        <activity android:name=".AnekApps.DiceRoller" />
+        <activity android:name=".AnekApps.Converter" />
+        <activity android:name=".AnekApps.Calculator" />
+        <activity android:name=".AnekApps.ColorCode" />
+        <activity android:name=".AnekApps.BrowserSearch" />
+        <activity android:name=".AnekApps.PhotoGallery" />
+        <activity android:name=".AnekApps.Barcode" />
+        <activity android:name=".AnekApps.Notebook" />
+        <activity android:name=".AnekApps.Passwords" />
+        <activity android:name=".AnekApps.Counter" />
+        <activity android:name=".AnekApps.LinkifyLinks" />
+        <activity android:name=".AnekScreen" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
