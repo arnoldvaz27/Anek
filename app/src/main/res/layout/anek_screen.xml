@@ -11,33 +11,24 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/_8sdp"
-        android:layout_marginTop="@dimen/_3sdp"
-        android:layout_marginEnd="@dimen/_8sdp"
         android:gravity="center_vertical"
         android:orientation="horizontal"
-        android:padding="@dimen/_8sdp"
-        android:paddingStart="@dimen/_10sdp"
-        android:paddingEnd="@dimen/_10sdp"
+        android:background="@color/red"
         android:weightSum="2">
 
         <TextView
-            android:layout_width="@dimen/_190sdp"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_weight="1.9"
+            android:layout_weight="2"
             android:includeFontPadding="false"
             android:text="ANEK"
+            android:padding="@dimen/_10sdp"
             android:fontFamily="@font/regular"
             android:textColor="@color/white"
+            android:layout_marginStart="@dimen/_10sdp"
             android:textSize="@dimen/_22ssp" />
 
     </LinearLayout>
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:layout_marginTop="@dimen/_8sdp"
-        android:layout_marginBottom="@dimen/_10sdp"
-        android:background="@color/red" />
 
 
     <ScrollView
@@ -197,6 +188,37 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Barcode Scanner"
+                        android:textSize="@dimen/_13ssp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_marginStart="@dimen/_12sdp"
+                        android:textColor="@color/colorAccent" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/_25sdp">
+
+
+                <LinearLayout
+                    android:id="@+id/qrCode"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_17sdp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="@dimen/_40sdp"
+                        android:layout_height="@dimen/_40sdp"
+                        android:src="@drawable/qr_code"
+                        android:layout_marginStart="@dimen/_3sdp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Barcode Generator"
                         android:textSize="@dimen/_13ssp"
                         android:layout_marginTop="@dimen/_10sdp"
                         android:layout_marginStart="@dimen/_12sdp"

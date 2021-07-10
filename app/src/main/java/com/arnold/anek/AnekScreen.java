@@ -27,7 +27,8 @@ public class AnekScreen extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        getWindow().setStatusBarColor(getResources().getColor(R.color.colorPrimaryDark));
+        getWindow().setStatusBarColor(getResources().getColor(R.color.red));
+        getWindow().setNavigationBarColor(getResources().getColor(R.color.colorPrimaryDark));
         setContentView(R.layout.anek_screen);
 
         initView();
