@@ -17,11 +17,12 @@ import com.arnold.anek.AnekApps.LinkifyLinks;
 import com.arnold.anek.AnekApps.Notebook;
 import com.arnold.anek.AnekApps.Passwords;
 import com.arnold.anek.AnekApps.PhotoGallery;
+import com.arnold.anek.AnekApps.QrCode;
 import com.arnold.anek.AnekApps.Recorder;
 
 public class AnekScreen extends AppCompatActivity {
 
-    private LinearLayout linkify, counter, passwords, notebook, barcode, gallery,
+    private LinearLayout linkify, counter, passwords, notebook, barcode, qrCode, gallery,
             browser, colorCode, calculator, converter, diceRoller, recorder;
 
     @Override
@@ -55,6 +56,10 @@ public class AnekScreen extends AppCompatActivity {
         });
         barcode.setOnClickListener(v -> {
             startActivity(new Intent(getApplicationContext(), Barcode.class));
+
+        });
+        qrCode.setOnClickListener(v -> {
+            startActivity(new Intent(getApplicationContext(), QrCode.class));
 
         });
         gallery.setOnClickListener(v -> {
@@ -93,6 +98,7 @@ public class AnekScreen extends AppCompatActivity {
         passwords = findViewById(R.id.passwords);
         notebook = findViewById(R.id.notebook);
         barcode = findViewById(R.id.barcode);
+        qrCode = findViewById(R.id.qrCode);
         gallery = findViewById(R.id.gallery);
         browser = findViewById(R.id.browser);
         colorCode = findViewById(R.id.colorCode);

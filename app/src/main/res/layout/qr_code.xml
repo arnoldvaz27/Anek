@@ -6,12 +6,12 @@
     android:orientation="vertical"
     android:layout_height="match_parent"
     android:background="@color/colorPrimaryDark"
-    tools:context=".AnekApps.Barcode">
+    tools:context=".AnekApps.QrCode">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/light_red"
+        android:background="@color/red"
         android:gravity="center_vertical"
         android:orientation="horizontal"
         android:padding="@dimen/_10sdp"
@@ -20,14 +20,14 @@
         <ImageView
             android:layout_width="@dimen/_40sdp"
             android:layout_height="@dimen/_40sdp"
-            android:src="@drawable/barcode" />
+            android:src="@drawable/qr_code" />
 
         <TextView
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="2"
             android:includeFontPadding="false"
-            android:text="Barcode Scanner"
+            android:text="QR Code Generator"
             android:fontFamily="@font/regular"
             android:textColor="@color/white"
             android:layout_marginStart="@dimen/_10sdp"
@@ -35,30 +35,32 @@
 
     </LinearLayout>
 
-
-
-    <TextView
-        android:id="@+id/scannedText"
+    <EditText
+        android:id="@+id/qrText"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
-        android:includeFontPadding="false"
-        android:hint="scanned text will appear here"
-        android:textColorHint="@android:color/darker_gray"
-        android:fontFamily="@font/regular"
-        android:layout_marginStart="@dimen/_15sdp"
+        android:layout_marginStart="@dimen/_12sdp"
         android:layout_marginTop="@dimen/_15sdp"
-        android:layout_marginBottom="@dimen/_5sdp"
+        android:layout_marginEnd="@dimen/_12sdp"
+        android:layout_marginBottom="@dimen/_15sdp"
+        android:background="@null"
+        android:hint="Write Here"
+        android:gravity="start"
+        android:includeFontPadding="false"
+        android:inputType="textMultiLine"
+        android:minHeight="@dimen/_100sdp"
         android:textColor="@color/white"
-        android:textSize="@dimen/_16ssp" />
+        android:textColorHint="@android:color/darker_gray"
+        android:textSize="@dimen/_13ssp"/>
 
     <ImageView
-        android:id="@+id/scanner"
+        android:id="@+id/qrCode"
         android:layout_width="@dimen/_35sdp"
         android:layout_height="@dimen/_35sdp"
         android:layout_marginEnd="@dimen/_15sdp"
         android:layout_marginBottom="@dimen/_15sdp"
-        android:src="@drawable/scan"
+        android:src="@drawable/qr_code"
         android:layout_gravity="end"
         app:tint="@color/red"
         android:contentDescription="TODO" />
