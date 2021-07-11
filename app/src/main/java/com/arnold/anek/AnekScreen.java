@@ -12,6 +12,7 @@ import com.arnold.anek.AnekApps.Calculator;
 import com.arnold.anek.AnekApps.ColorCode;
 import com.arnold.anek.AnekApps.Converter;
 import com.arnold.anek.AnekApps.Counter;
+import com.arnold.anek.AnekApps.Diary;
 import com.arnold.anek.AnekApps.DiceRoller;
 import com.arnold.anek.AnekApps.LinkifyLinks;
 import com.arnold.anek.AnekApps.Notebook;
@@ -22,13 +23,13 @@ import com.arnold.anek.AnekApps.Recorder;
 
 public class AnekScreen extends AppCompatActivity {
 
-    private LinearLayout linkify, counter, passwords, notebook, barcode, qrCode, gallery,
+    private LinearLayout linkify, counter, passwords, notebook,diary, barcode, qrCode, gallery,
             browser, colorCode, calculator, converter, diceRoller, recorder;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        getWindow().setStatusBarColor(getResources().getColor(R.color.red));
+        getWindow().setStatusBarColor(getResources().getColor(R.color.light_red));
         getWindow().setNavigationBarColor(getResources().getColor(R.color.colorPrimaryDark));
         setContentView(R.layout.anek_screen);
 
@@ -52,6 +53,10 @@ public class AnekScreen extends AppCompatActivity {
         });
         notebook.setOnClickListener(v -> {
             startActivity(new Intent(getApplicationContext(), Notebook.class));
+
+        });
+        diary.setOnClickListener(v -> {
+            startActivity(new Intent(getApplicationContext(), Diary.class));
 
         });
         barcode.setOnClickListener(v -> {
@@ -97,6 +102,7 @@ public class AnekScreen extends AppCompatActivity {
         counter = findViewById(R.id.counter);
         passwords = findViewById(R.id.passwords);
         notebook = findViewById(R.id.notebook);
+        diary = findViewById(R.id.diary);
         barcode = findViewById(R.id.barcode);
         qrCode = findViewById(R.id.qrCode);
         gallery = findViewById(R.id.gallery);

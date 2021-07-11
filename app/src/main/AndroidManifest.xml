@@ -27,19 +27,27 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Anek"
         tools:ignore="AllowBackup">
-        <activity android:name=".AnekApps.QrCode"
-            android:screenOrientation="portrait"
-            tools:ignore="LockedOrientationActivity"
+        <activity android:name=".HelperActivities.Temperature"></activity>
+        <activity android:name=".HelperActivities.Time" />
+        <activity android:name=".HelperActivities.Cooking" />
+        <activity android:name=".HelperActivities.AreaConversion" />
+        <activity android:name=".AnekApps.Diary" />
+        <activity
+            android:name=".AnekApps.QrCode"
             android:icon="@drawable/qr_code"
-            android:label="Create QR Code">
+            android:label="Create QR Code"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity">
             <intent-filter>
                 <action android:name="android.intent.action.SEND" />
+
                 <category android:name="android.intent.category.DEFAULT" />
+
                 <data android:mimeType="text/plain" />
             </intent-filter>
         </activity>
         <activity
-            android:name=".CaptureAct"
+            android:name=".HelperActivities.CaptureAct"
             android:screenOrientation="fullSensor"
             android:stateNotNeeded="true"
             android:windowSoftInputMode="stateAlwaysHidden" />
@@ -47,7 +55,8 @@
         <activity android:name=".AnekApps.DiceRoller" />
         <activity android:name=".AnekApps.Converter" />
         <activity android:name=".AnekApps.Calculator" />
-        <activity android:name=".AnekApps.ColorCode"
+        <activity
+            android:name=".AnekApps.ColorCode"
             android:forceDarkAllowed="false"
             tools:targetApi="q" />
         <activity android:name=".AnekApps.BrowserSearch" />
@@ -55,12 +64,15 @@
         <activity android:name=".AnekApps.Barcode" />
         <activity android:name=".AnekApps.Notebook" />
         <activity android:name=".AnekApps.Passwords" />
-        <activity android:name=".AnekApps.Counter"
-            android:label="Counter - Anek"
-            android:icon="@drawable/word_counter" >
+        <activity
+            android:name=".AnekApps.Counter"
+            android:icon="@drawable/word_counter"
+            android:label="Counter - Anek">
             <intent-filter>
                 <action android:name="android.intent.action.SEND" />
+
                 <category android:name="android.intent.category.DEFAULT" />
+
                 <data android:mimeType="text/plain" />
             </intent-filter>
         </activity>
@@ -74,4 +86,5 @@
             </intent-filter>
         </activity>
     </application>
+
 </manifest>

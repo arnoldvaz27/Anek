@@ -9,7 +9,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.arnold.anek.CaptureAct;
+import com.arnold.anek.HelperActivities.CaptureAct;
 import com.arnold.anek.R;
 import com.google.zxing.integration.android.IntentIntegrator;
 import com.google.zxing.integration.android.IntentResult;
