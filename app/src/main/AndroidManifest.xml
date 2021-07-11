@@ -47,13 +47,23 @@
         <activity android:name=".AnekApps.DiceRoller" />
         <activity android:name=".AnekApps.Converter" />
         <activity android:name=".AnekApps.Calculator" />
-        <activity android:name=".AnekApps.ColorCode" />
+        <activity android:name=".AnekApps.ColorCode"
+            android:forceDarkAllowed="false"
+            tools:targetApi="q" />
         <activity android:name=".AnekApps.BrowserSearch" />
         <activity android:name=".AnekApps.PhotoGallery" />
         <activity android:name=".AnekApps.Barcode" />
         <activity android:name=".AnekApps.Notebook" />
         <activity android:name=".AnekApps.Passwords" />
-        <activity android:name=".AnekApps.Counter" />
+        <activity android:name=".AnekApps.Counter"
+            android:label="Counter - Anek"
+            android:icon="@drawable/word_counter" >
+            <intent-filter>
+                <action android:name="android.intent.action.SEND" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="text/plain" />
+            </intent-filter>
+        </activity>
         <activity android:name=".AnekApps.LinkifyLinks" />
         <activity android:name=".AnekScreen" />
         <activity android:name=".MainActivity">
@@ -64,5 +74,4 @@
             </intent-filter>
         </activity>
     </application>
-
 </manifest>
