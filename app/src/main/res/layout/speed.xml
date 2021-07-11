@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@color/colorPrimaryDark"
     android:orientation="vertical"
-    tools:context=".HelperActivities.Temperature">
+    tools:context=".HelperActivities.Speed">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -20,16 +20,16 @@
         <ImageView
             android:layout_width="@dimen/_40sdp"
             android:layout_height="@dimen/_40sdp"
-            android:src="@drawable/temperature" />
+            android:src="@drawable/speed" />
 
         <TextView
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="@dimen/_6sdp"
+            android:layout_marginStart="@dimen/_10sdp"
             android:layout_weight="2"
             android:fontFamily="@font/regular"
             android:includeFontPadding="false"
-            android:text="Temperature"
+            android:text="Speed"
             android:textColor="@color/white"
             android:textSize="@dimen/_19ssp" />
 
@@ -49,7 +49,7 @@
             android:layout_weight="2"
             android:fontFamily="@font/regular"
             android:includeFontPadding="false"
-            android:text="From Value"
+            android:text="From Speed"
             android:textColor="@color/white"
             android:textSize="@dimen/_19ssp" />
 
@@ -60,7 +60,7 @@
             android:layout_weight="2"
             android:fontFamily="@font/regular"
             android:includeFontPadding="false"
-            android:text="To Value"
+            android:text="To Speed"
             android:textColor="@color/white"
             android:textSize="@dimen/_19ssp" />
     </LinearLayout>
@@ -168,16 +168,15 @@
                 android:layout_marginStart="@dimen/_5sdp"
                 android:layout_weight="1">
 
-
                 <RadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="@dimen/_15sdp"
                     android:buttonTint="@color/red"
                     android:checked="true"
-                    android:text="Celsius"
+                    android:text="Kilometre/hour"
                     android:textColor="@color/white"
-                    android:textSize="@dimen/_12ssp"   />
+                    android:textSize="@dimen/_12ssp" />
 
                 <RadioButton
                     android:layout_width="wrap_content"
@@ -185,9 +184,9 @@
                     android:layout_marginBottom="@dimen/_15sdp"
                     android:buttonTint="@color/red"
                     android:checked="false"
-                    android:text="Fahrenheit"
+                    android:text="Mile/hour"
                     android:textColor="@color/white"
-                    android:textSize="@dimen/_12ssp"   />
+                    android:textSize="@dimen/_12ssp" />
 
                 <RadioButton
                     android:layout_width="wrap_content"
@@ -195,9 +194,9 @@
                     android:layout_marginBottom="@dimen/_15sdp"
                     android:buttonTint="@color/red"
                     android:checked="false"
-                    android:text="Kelvin"
+                    android:text="Metre/second"
                     android:textColor="@color/white"
-                    android:textSize="@dimen/_12ssp"   />
+                    android:textSize="@dimen/_12ssp" />
 
                 <RadioButton
                     android:layout_width="wrap_content"
@@ -205,9 +204,9 @@
                     android:layout_marginBottom="@dimen/_15sdp"
                     android:buttonTint="@color/red"
                     android:checked="false"
-                    android:text="Rankine"
+                    android:text="Foot/second"
                     android:textColor="@color/white"
-                    android:textSize="@dimen/_12ssp"  />
+                    android:textSize="@dimen/_12ssp" />
 
                 <RadioButton
                     android:layout_width="wrap_content"
@@ -215,49 +214,9 @@
                     android:layout_marginBottom="@dimen/_15sdp"
                     android:buttonTint="@color/red"
                     android:checked="false"
-                    android:text="Delisle"
+                    android:text="Knot"
                     android:textColor="@color/white"
-                    android:textSize="@dimen/_12ssp"  />
-
-                <RadioButton
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="@dimen/_15sdp"
-                    android:buttonTint="@color/red"
-                    android:checked="false"
-                    android:text="Newton"
-                    android:textColor="@color/white"
-                    android:textSize="@dimen/_12ssp"   />
-
-                <RadioButton
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="@dimen/_15sdp"
-                    android:buttonTint="@color/red"
-                    android:checked="false"
-                    android:text="Reaumur"
-                    android:textColor="@color/white"
-                    android:textSize="@dimen/_12ssp"   />
-
-                <RadioButton
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="@dimen/_15sdp"
-                    android:buttonTint="@color/red"
-                    android:checked="false"
-                    android:text="Romer"
-                    android:textColor="@color/white"
-                    android:textSize="@dimen/_12ssp"   />
-
-                <RadioButton
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="@dimen/_15sdp"
-                    android:buttonTint="@color/red"
-                    android:checked="false"
-                    android:text="Gas Mark"
-                    android:textColor="@color/white"
-                    android:textSize="@dimen/_12ssp"   />
+                    android:textSize="@dimen/_12ssp"/>
 
             </RadioGroup>
 
@@ -267,16 +226,15 @@
                 android:layout_marginStart="@dimen/_5sdp"
                 android:layout_weight="1">
 
-
                 <RadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="@dimen/_15sdp"
                     android:buttonTint="@color/red"
                     android:checked="false"
-                    android:text="Celsius"
+                    android:text="Kilometre/hour"
                     android:textColor="@color/white"
-                    android:textSize="@dimen/_12ssp"   />
+                    android:textSize="@dimen/_12ssp" />
 
                 <RadioButton
                     android:layout_width="wrap_content"
@@ -284,9 +242,9 @@
                     android:layout_marginBottom="@dimen/_15sdp"
                     android:buttonTint="@color/red"
                     android:checked="true"
-                    android:text="Fahrenheit"
+                    android:text="Mile/hour"
                     android:textColor="@color/white"
-                    android:textSize="@dimen/_12ssp"   />
+                    android:textSize="@dimen/_12ssp" />
 
                 <RadioButton
                     android:layout_width="wrap_content"
@@ -294,9 +252,9 @@
                     android:layout_marginBottom="@dimen/_15sdp"
                     android:buttonTint="@color/red"
                     android:checked="false"
-                    android:text="Kelvin"
+                    android:text="Metre/second"
                     android:textColor="@color/white"
-                    android:textSize="@dimen/_12ssp"   />
+                    android:textSize="@dimen/_12ssp" />
 
                 <RadioButton
                     android:layout_width="wrap_content"
@@ -304,9 +262,9 @@
                     android:layout_marginBottom="@dimen/_15sdp"
                     android:buttonTint="@color/red"
                     android:checked="false"
-                    android:text="Rankine"
+                    android:text="Foot/second"
                     android:textColor="@color/white"
-                    android:textSize="@dimen/_12ssp"  />
+                    android:textSize="@dimen/_12ssp" />
 
                 <RadioButton
                     android:layout_width="wrap_content"
@@ -314,49 +272,9 @@
                     android:layout_marginBottom="@dimen/_15sdp"
                     android:buttonTint="@color/red"
                     android:checked="false"
-                    android:text="Delisle"
+                    android:text="Knot"
                     android:textColor="@color/white"
-                    android:textSize="@dimen/_12ssp"  />
-
-                <RadioButton
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="@dimen/_15sdp"
-                    android:buttonTint="@color/red"
-                    android:checked="false"
-                    android:text="Newton"
-                    android:textColor="@color/white"
-                    android:textSize="@dimen/_12ssp"   />
-
-                <RadioButton
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="@dimen/_15sdp"
-                    android:buttonTint="@color/red"
-                    android:checked="false"
-                    android:text="Reaumur"
-                    android:textColor="@color/white"
-                    android:textSize="@dimen/_12ssp"   />
-
-                <RadioButton
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="@dimen/_15sdp"
-                    android:buttonTint="@color/red"
-                    android:checked="false"
-                    android:text="Romer"
-                    android:textColor="@color/white"
-                    android:textSize="@dimen/_12ssp"   />
-
-                <RadioButton
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="@dimen/_15sdp"
-                    android:buttonTint="@color/red"
-                    android:checked="false"
-                    android:text="Gas Mark"
-                    android:textColor="@color/white"
-                    android:textSize="@dimen/_12ssp"   />
+                    android:textSize="@dimen/_12ssp"/>
             </RadioGroup>
         </LinearLayout>
     </ScrollView>

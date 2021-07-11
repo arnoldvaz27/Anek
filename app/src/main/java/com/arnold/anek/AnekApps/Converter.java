@@ -9,6 +9,8 @@ import android.widget.LinearLayout;
 
 import com.arnold.anek.HelperActivities.AreaConversion;
 import com.arnold.anek.HelperActivities.Cooking;
+import com.arnold.anek.HelperActivities.Speed;
+import com.arnold.anek.HelperActivities.Temperature;
 import com.arnold.anek.HelperActivities.Time;
 import com.arnold.anek.R;
 
@@ -96,13 +98,17 @@ public class Converter extends AppCompatActivity {
         speed.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                startActivity(
+                        new Intent(Converter.this, Speed.class)
+                );
             }
         });
         temperature.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                startActivity(
+                        new Intent(Converter.this, Temperature.class)
+                );
             }
         });
         time.setOnClickListener(new View.OnClickListener() {

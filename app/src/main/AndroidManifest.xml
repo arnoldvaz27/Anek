@@ -27,7 +27,8 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Anek"
         tools:ignore="AllowBackup">
-        <activity android:name=".HelperActivities.Temperature"></activity>
+        <activity android:name=".HelperActivities.Speed"></activity>
+        <activity android:name=".HelperActivities.Temperature" />
         <activity android:name=".HelperActivities.Time" />
         <activity android:name=".HelperActivities.Cooking" />
         <activity android:name=".HelperActivities.AreaConversion" />
