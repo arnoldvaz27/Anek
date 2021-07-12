@@ -27,7 +27,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Anek"
         tools:ignore="AllowBackup">
-        <activity android:name=".HelperActivities.Fuel"></activity>
+        <activity android:name=".HelperActivities.Storage"></activity>
+        <activity android:name=".HelperActivities.Energy" />
+        <activity android:name=".HelperActivities.Fuel" />
         <activity android:name=".HelperActivities.Weight" />
         <activity android:name=".HelperActivities.Power" />
         <activity android:name=".HelperActivities.Pressure" />
