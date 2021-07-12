@@ -11,6 +11,8 @@ public class Speed extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        getWindow().setStatusBarColor(getResources().getColor(R.color.light_red));
+        getWindow().setNavigationBarColor(getResources().getColor(R.color.colorPrimaryDark));
         setContentView(R.layout.speed);
     }
 }
