@@ -9,9 +9,15 @@ import android.widget.LinearLayout;
 
 import com.arnold.anek.HelperActivities.AreaConversion;
 import com.arnold.anek.HelperActivities.Cooking;
+import com.arnold.anek.HelperActivities.Energy;
+import com.arnold.anek.HelperActivities.Fuel;
+import com.arnold.anek.HelperActivities.Power;
+import com.arnold.anek.HelperActivities.Pressure;
 import com.arnold.anek.HelperActivities.Speed;
+import com.arnold.anek.HelperActivities.Storage;
 import com.arnold.anek.HelperActivities.Temperature;
 import com.arnold.anek.HelperActivities.Time;
+import com.arnold.anek.HelperActivities.Weight;
 import com.arnold.anek.R;
 
 public class Converter extends AppCompatActivity {
@@ -31,86 +37,47 @@ public class Converter extends AppCompatActivity {
     }
 
     private void ButtonClicks() {
-        area.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(
-                        new Intent(Converter.this, AreaConversion.class)
-                );
-            }
-        });
-        cooking.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(
-                        new Intent(Converter.this, Cooking.class)
-                );
-            }
-        });
+        area.setOnClickListener(v -> startActivity(
+                new Intent(Converter.this, AreaConversion.class)
+        ));
+        cooking.setOnClickListener(v -> startActivity(
+                new Intent(Converter.this, Cooking.class)
+        ));
         currency.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
             }
         });
-        storage.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-            }
-        });
-        energy.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-            }
-        });
-        fuel.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-            }
-        });
+        storage.setOnClickListener(v -> startActivity(
+                new Intent(Converter.this, Storage.class)
+        ));
+        energy.setOnClickListener(v -> startActivity(
+                new Intent(Converter.this, Energy.class)
+        ));
+        fuel.setOnClickListener(v -> startActivity(
+                new Intent(Converter.this, Fuel.class)
+        ));
         distance.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
             }
         });
-        weight.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-            }
-        });
-        power.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-            }
-        });
-        pressure.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-            }
-        });
-        speed.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(
-                        new Intent(Converter.this, Speed.class)
-                );
-            }
-        });
-        temperature.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(
-                        new Intent(Converter.this, Temperature.class)
-                );
-            }
-        });
+        weight.setOnClickListener(v -> startActivity(
+                new Intent(Converter.this, Weight.class)
+        ));
+        power.setOnClickListener(v -> startActivity(
+                new Intent(Converter.this, Power.class)
+        ));
+        pressure.setOnClickListener(v -> startActivity(
+                new Intent(Converter.this, Pressure.class)
+        ));
+        speed.setOnClickListener(v -> startActivity(
+                new Intent(Converter.this, Speed.class)
+        ));
+        temperature.setOnClickListener(v -> startActivity(
+                new Intent(Converter.this, Temperature.class)
+        ));
         time.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

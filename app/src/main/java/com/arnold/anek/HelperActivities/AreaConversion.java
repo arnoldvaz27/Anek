@@ -3,10 +3,15 @@ package com.arnold.anek.HelperActivities;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.widget.RadioButton;
+import android.widget.RadioGroup;
 
 import com.arnold.anek.R;
 
 public class AreaConversion extends AppCompatActivity {
+
+    private RadioGroup GroupLeft,GroupRight;
+    private RadioButton radioSexButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

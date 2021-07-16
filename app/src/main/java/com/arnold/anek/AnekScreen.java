@@ -10,6 +10,7 @@ import com.arnold.anek.AnekApps.Barcode;
 import com.arnold.anek.AnekApps.BrowserSearch;
 import com.arnold.anek.AnekApps.Calculator;
 import com.arnold.anek.AnekApps.ColorCode;
+import com.arnold.anek.AnekApps.Compass;
 import com.arnold.anek.AnekApps.Converter;
 import com.arnold.anek.AnekApps.Counter;
 import com.arnold.anek.AnekApps.Diary;
@@ -23,9 +24,6 @@ import com.arnold.anek.AnekApps.Recorder;
 
 public class AnekScreen extends AppCompatActivity {
 
-    private LinearLayout linkify, counter, passwords, notebook,diary, barcode, qrCode, gallery,
-            browser, colorCode, calculator, converter, diceRoller, recorder;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -33,84 +31,65 @@ public class AnekScreen extends AppCompatActivity {
         getWindow().setNavigationBarColor(getResources().getColor(R.color.colorPrimaryDark));
         setContentView(R.layout.anek_screen);
 
-        initView();
-
-        appClicks();
-    }
-
-    private void appClicks() {
-
-        linkify.setOnClickListener(v -> {
+        findViewById(R.id.linkify).setOnClickListener(v -> {
             startActivity(new Intent(getApplicationContext(), LinkifyLinks.class));
         });
-        counter.setOnClickListener(v -> {
+        findViewById(R.id.counter).setOnClickListener(v -> {
             startActivity(new Intent(getApplicationContext(), Counter.class));
 
         });
-        passwords.setOnClickListener(v -> {
+        findViewById(R.id.passwords).setOnClickListener(v -> {
             startActivity(new Intent(getApplicationContext(), Passwords.class));
 
         });
-        notebook.setOnClickListener(v -> {
+        findViewById(R.id.compass).setOnClickListener(v -> {
+            startActivity(new Intent(getApplicationContext(), Compass.class));
+
+        });
+        findViewById(R.id.notebook).setOnClickListener(v -> {
             startActivity(new Intent(getApplicationContext(), Notebook.class));
 
         });
-        diary.setOnClickListener(v -> {
+        findViewById(R.id.diary).setOnClickListener(v -> {
             startActivity(new Intent(getApplicationContext(), Diary.class));
 
         });
-        barcode.setOnClickListener(v -> {
+        findViewById(R.id.barcode).setOnClickListener(v -> {
             startActivity(new Intent(getApplicationContext(), Barcode.class));
 
         });
-        qrCode.setOnClickListener(v -> {
+        findViewById(R.id.qrCode).setOnClickListener(v -> {
             startActivity(new Intent(getApplicationContext(), QrCode.class));
 
         });
-        gallery.setOnClickListener(v -> {
+        findViewById(R.id.gallery).setOnClickListener(v -> {
             startActivity(new Intent(getApplicationContext(), PhotoGallery.class));
 
         });
-        browser.setOnClickListener(v -> {
+        findViewById(R.id.browser).setOnClickListener(v -> {
             startActivity(new Intent(getApplicationContext(), BrowserSearch.class));
 
         });
-        colorCode.setOnClickListener(v -> {
+        findViewById(R.id.colorCode).setOnClickListener(v -> {
             startActivity(new Intent(getApplicationContext(), ColorCode.class));
 
         });
-        calculator.setOnClickListener(v -> {
+        findViewById(R.id.calculator).setOnClickListener(v -> {
             startActivity(new Intent(getApplicationContext(), Calculator.class));
 
         });
-        converter.setOnClickListener(v -> {
+        findViewById(R.id.converter).setOnClickListener(v -> {
             startActivity(new Intent(getApplicationContext(), Converter.class));
 
         });
-        diceRoller.setOnClickListener(v -> {
+        findViewById(R.id.dices).setOnClickListener(v -> {
             startActivity(new Intent(getApplicationContext(), DiceRoller.class));
 
         });
-        recorder.setOnClickListener(v -> {
+        findViewById(R.id.recorder).setOnClickListener(v -> {
             startActivity(new Intent(getApplicationContext(), Recorder.class));
 
         });
     }
 
-    private void initView() {
-        linkify = findViewById(R.id.linkify);
-        counter = findViewById(R.id.counter);
-        passwords = findViewById(R.id.passwords);
-        notebook = findViewById(R.id.notebook);
-        diary = findViewById(R.id.diary);
-        barcode = findViewById(R.id.barcode);
-        qrCode = findViewById(R.id.qrCode);
-        gallery = findViewById(R.id.gallery);
-        browser = findViewById(R.id.browser);
-        colorCode = findViewById(R.id.colorCode);
-        calculator = findViewById(R.id.calculator);
-        converter = findViewById(R.id.converter);
-        diceRoller = findViewById(R.id.dices);
-        recorder = findViewById(R.id.recorder);
-    }
 }
