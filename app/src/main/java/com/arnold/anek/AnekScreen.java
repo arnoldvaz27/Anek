@@ -2,7 +2,6 @@ package com.arnold.anek;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.widget.LinearLayout;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -20,7 +19,7 @@ import com.arnold.anek.AnekApps.Notebook;
 import com.arnold.anek.AnekApps.Passwords;
 import com.arnold.anek.AnekApps.PhotoGallery;
 import com.arnold.anek.AnekApps.QrCode;
-import com.arnold.anek.AnekApps.Recorder;
+import com.arnold.anek.Recorder.RecorderActivity;
 
 public class AnekScreen extends AppCompatActivity {
 
@@ -76,8 +75,8 @@ public class AnekScreen extends AppCompatActivity {
         });
         findViewById(R.id.calculator).setOnClickListener(v -> {
             startActivity(new Intent(getApplicationContext(), Calculator.class));
-
         });
+
         findViewById(R.id.converter).setOnClickListener(v -> {
             startActivity(new Intent(getApplicationContext(), Converter.class));
 
@@ -87,7 +86,7 @@ public class AnekScreen extends AppCompatActivity {
 
         });
         findViewById(R.id.recorder).setOnClickListener(v -> {
-            startActivity(new Intent(getApplicationContext(), Recorder.class));
+            startActivity(new Intent(getApplicationContext(), RecorderActivity.class));
 
         });
     }

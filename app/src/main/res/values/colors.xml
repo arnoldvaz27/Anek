@@ -11,4 +11,16 @@
     <color name="colorAccent">#FDBE3B</color>
     <color name="red">#FF4842</color>
     <color name="light_red">#6A4A4A</color>
+    <color name="background">#333333</color>
+
+
+    <color name="cyan">#51e1ed</color>
+
+    <color name="color3">#FF4842</color>
+    <color name="colorPrimary">#1B1A1C</color>
+
+
+    <color name="yellow">#FFA726</color>
+    <color name="green">#66BB6A</color>
+    <color name="Java">#29B6F6</color>
 </resources>

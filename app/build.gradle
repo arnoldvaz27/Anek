@@ -47,5 +47,6 @@ dependencies {
     implementation 'com.google.zxing:core:3.3.0'
     implementation 'androidmads.library.qrgenearator:QRGenearator:1.0.3' //qr code generator
     implementation 'com.itextpdf:itextg:5.5.10' // creating pdf,txt files
-
+    implementation 'pl.droidsonroids.gif:android-gif-drawable:1.1.17'
+    
 }

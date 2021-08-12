@@ -27,7 +27,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Anek"
         tools:ignore="AllowBackup">
-        <activity android:name=".AnekApps.Compass"></activity>
+        <activity android:name=".AnekApps.Compass" />
         <activity android:name=".HelperActivities.Storage" />
         <activity android:name=".HelperActivities.Energy" />
         <activity android:name=".HelperActivities.Fuel" />
@@ -59,7 +59,7 @@
             android:screenOrientation="fullSensor"
             android:stateNotNeeded="true"
             android:windowSoftInputMode="stateAlwaysHidden" />
-        <activity android:name=".AnekApps.Recorder" />
+        <activity android:name=".Recorder.RecorderActivity" />
         <activity android:name=".AnekApps.DiceRoller" />
         <activity android:name=".AnekApps.Converter" />
         <activity android:name=".AnekApps.Calculator" />
@@ -93,6 +93,15 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_path" />
+        </provider>
     </application>
 
 </manifest>
